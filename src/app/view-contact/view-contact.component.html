@@ -1,0 +1,40 @@
+<div class="container mt-2">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold"><i class="fa fa-eye"></i> View Contact</p>
+            <p class="fst-italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis consequuntur quae dicta repudiandae adipisci hic natus tenetur quia impedit expedita, ut neque totam qui facere culpa ab animi libero voluptatem at deleniti molestias alias recusandae
+                molestiae.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- spiner -->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>
+<!-- spiner -->
+<!-- <pre>{{contect | json}}</pre> -->
+<!--view contact details -->
+<div class="container" *ngIf="!loading && isNotEmpty()">
+    <div class="row align-items-center">
+        <div class="col-sm-4 text-center">
+            <img [src]="contect.photo" alt="view-profile" class="img-responsive w-100">
+        </div>
+        <div class="col-sm-6">
+            <ul class="list-style-none list-group">
+                <li class="list-group-item list-group-item-success">Name: <span class="fw-bold">{{contect.name}}</span></li>
+                <li class="list-group-item list-group-item-success">Email: <span class="fw-bold">{{contect.email}}</span></li>
+                <li class="list-group-item list-group-item-success">Mobile: <span class="fw-bold">{{contect.mobile}}</span></li>
+                <li class="list-group-item list-group-item-success">company: <span class="fw-bold">{{contect.company}}</span></li>
+                <li class="list-group-item list-group-item-success">title: <span class="fw-bold">{{contect.title}}</span></li>
+                <li class="list-group-item list-group-item-success"> group: <span class="fw-bold">{{group.name}}</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a routerLink="/" class="btn btn-warning"><i class="fa fa-arrow-alt-circle-left"></i> go Back</a>
+        </div>
+    </div>
+</div>

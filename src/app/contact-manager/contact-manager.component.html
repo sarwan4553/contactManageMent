@@ -1,0 +1,70 @@
+<div class="container mt-2">
+    <div class="row">
+        <div class="col">
+            <p class="h3">Study Time Contact Application
+                <a class="btn btn-success btn-small" href="/contacts/add">
+                    <i class="fa fa-plus-circle"></i> &nbsp;Add New
+                </a>
+            </p>
+            <p class="fst-italic mt-3 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit, dolor reprehenderit, qui quisquam voluptas aut est fugiat officia corporis fuga nesciunt quaerat impedit accusantium eum nobis minus modi similique. Praesentium numquam quia vel odio quo!
+                Voluptatibus, nemo? Maiores aliquam ipsa amet iusto dolore ratione delectus ut cumque tenetur necessitatibus.
+            </p>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="search contacts ....!">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="submit" class="btn btn-outline-dark" value="search">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- spiner -->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>
+<!-- spiner -->
+<!-- error massege -->
+<div *ngIf="!loading && errorMassage">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="h4 text-danger fw-bold">{{errorMassage}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- error massege -->
+<!-- <pre>{{contacts | json}} </pre> -->
+<!-- Card Design -->
+<div class="container mt-5" *ngIf="!loading && contacts.length>0">
+    <div class="row">
+        <div class="col-md-6 my-2" *ngFor="let contact of contacts">
+            <div class="card list-group-item-success">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <img [src]="contact.photo" alt="profile-images" srcset="" class="img-responsive w-100 contact-img">
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="list-style-none list-group">
+                                <li class="list-group-item">Name: <span class="fw-bold">{{contact.name}}</span></li>
+                                <li class="list-group-item">Email: <span class="fw-bold">{{contact.email}}</span></li>
+                                <li class="list-group-item">Mobile: <span class="fw-bold">{{contact.mobile}}</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
+                            <a routerLink="/contacts/view/{{contact.id}}" class="btn btn-warning mb-1"><i class="fa fa-eye  "></i></a>
+                            <a routerLink="/contacts/edit/{{contact.id}}" class="btn btn-success mb-1"><i class="fa fa-pen"></i></a>
+                            <a routerLink="/contacts/view/{{contact.id}}" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

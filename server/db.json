@@ -1,0 +1,80 @@
+{
+    "contact": [{
+            "id": "cot001",
+            "name": "sarwan kumar",
+            "email": "abc@gmail.com",
+            "mobile": "9876543210",
+            "company": "study time",
+            "title": "software Engeenear",
+            "groupId": "1",
+            "photo": "../../assets/img/user.png"
+        },
+        {
+            "id": "cot002",
+            "name": "Abhay kumar",
+            "email": "bca@gmail.com",
+            "mobile": "9876543210",
+            "company": "study time",
+            "title": "software Engeenear",
+            "groupId": "2",
+            "photo": "../../assets/img/user.png"
+        },
+        {
+            "id": "cot003",
+            "name": "nirbhay kumar",
+            "email": "abc@gmail.com",
+            "mobile": "9876543210",
+            "company": "study time",
+            "title": "software Engeenear",
+            "groupId": "3",
+            "photo": "../../assets/img/user.png"
+        },
+        {
+            "id": "cot004",
+            "name": "mahi",
+            "email": "abc@gmail.com",
+            "mobile": "9876543210",
+            "company": "study time",
+            "title": "software Engeenear",
+            "groupId": "4",
+            "photo": "../../assets/img/user.png"
+        },
+        {
+            "id": "cot005",
+            "name": "Drishty",
+            "email": "abc@gmail.com",
+            "mobile": "9876543210",
+            "company": "study time",
+            "title": "software Engeenear",
+            "groupId": "2",
+            "photo": "../../assets/img/user.png"
+        },
+        {
+            "id": "cot006",
+            "name": "aashi",
+            "email": "abc@gmail.com",
+            "mobile": "9876543210",
+            "company": "study time",
+            "title": "software Engeenear",
+            "groupId": "2",
+            "photo": "../../assets/img/user.png"
+        }
+    ],
+    "groups": [{
+            "id": "1",
+            "name": "calick"
+        },
+        {
+            "id": "2",
+            "name": "college"
+        },
+        {
+            "id": "3",
+            "name": "family"
+        },
+        {
+            "id": "4",
+            "name": "school"
+        }
+    ]
+}
