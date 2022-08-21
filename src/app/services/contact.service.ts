@@ -22,17 +22,17 @@ export class ContactService {
   }
   //create data
   public createContact(contact:MyContact):Observable<MyContact>{
-    let dataUrl:string=`${this.baseUrl}contacts`;
+    let dataUrl:string=`${this.baseUrl}contact`;
     return this.http.post<MyContact>(dataUrl,contact).pipe(catchError(this.handleError))
   }
   //update data
   public updateContact(contact:MyContact, contactId:string):Observable<MyContact>{
-    let dataUrl:string=`${this.baseUrl}contacts/${contactId}`;
+    let dataUrl:string=`${this.baseUrl}contact/${contactId}`;
     return this.http.put<MyContact>(dataUrl,contact).pipe(catchError(this.handleError))
   }
   //delete data
   public deleteContact(contactId:string):Observable<MyContact>{
-    let dataUrl:string=`${this.baseUrl}contacts/${contactId}`;
+    let dataUrl:string=`${this.baseUrl}contact/${contactId}`;
     return this.http.delete<MyContact>(dataUrl).pipe(catchError(this.handleError))
   }
 

@@ -9,32 +9,50 @@
         </div>
     </div>
 </div>
+<!-- spiner -->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>
+<!-- spiner -->
+<!-- error massege -->
+<div *ngIf="!loading && errorMessage">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="h4 text-danger fw-bold">{{errorMessage}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- error massege -->
+<!-- <pre>{{contact|json}}</pre> -->
 <!--Edit contact form -->
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <form action="">
+            <form (submit)="submitUpdate()">
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Name...!" />
+                    <input type="text" [(ngModel)]="contact.name" [value]="contact.name" name="name" class="form-control" placeholder="Name...!" />
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Photo...!" />
+                    <input type="text" [(ngModel)]="contact.photo" [value]="contact.photo" name="photo" class="form-control" placeholder="Photo...!" />
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="email...!" />
+                    <input type="text" [(ngModel)]="contact.email" [value]="contact.email" name="email" class="form-control" placeholder="email...!" />
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="mobile...!" />
+                    <input type="text" [(ngModel)]="contact.mobile" [value]="contact.mobile" name="mobile" class="form-control" placeholder="mobile...!" />
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="company...!" />
+                    <input type="text" [(ngModel)]="contact.company" [value]="contact.company" name="company" class="form-control" placeholder="company...!" />
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="title...!" />
+                    <input type="text" [(ngModel)]="contact.title" [value]="contact.title" name="title" class="form-control" placeholder="title...!" />
                 </div>
                 <div class="mb-2">
-                    <select name="" id="" class="form-control">
-          <option value="">---Select a group---</option>
+                    <select name="" id="" class="form-control" [(ngModel)]="contact.groupId" [value]="contact.groupId" name="groupId">
+                    <option value="">---Select a group---</option>
+                    <option [value]="groups.id" *ngFor="let groups of group">{{groups.name}}</option>
         </select>
                 </div>
 
@@ -45,7 +63,7 @@
             </form>
         </div>
         <div class="col-sm-4">
-            <img src="../../assets/img/user.png" alt="" srcset="" class="img-responsive w-100">
+            <img [src]="contact.photo" alt="" srcset="" class="img-responsive w-100">
         </div>
     </div>
 </div>

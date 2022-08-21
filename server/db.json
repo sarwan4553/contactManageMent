@@ -1,80 +1,72 @@
 {
-    "contact": [{
-            "id": "cot001",
-            "name": "sarwan kumar",
-            "email": "abc@gmail.com",
-            "mobile": "9876543210",
-            "company": "study time",
-            "title": "software Engeenear",
-            "groupId": "1",
-            "photo": "../../assets/img/user.png"
-        },
-        {
-            "id": "cot002",
-            "name": "Abhay kumar",
-            "email": "bca@gmail.com",
-            "mobile": "9876543210",
-            "company": "study time",
-            "title": "software Engeenear",
-            "groupId": "2",
-            "photo": "../../assets/img/user.png"
-        },
-        {
-            "id": "cot003",
-            "name": "nirbhay kumar",
-            "email": "abc@gmail.com",
-            "mobile": "9876543210",
-            "company": "study time",
-            "title": "software Engeenear",
-            "groupId": "3",
-            "photo": "../../assets/img/user.png"
-        },
-        {
-            "id": "cot004",
-            "name": "mahi",
-            "email": "abc@gmail.com",
-            "mobile": "9876543210",
-            "company": "study time",
-            "title": "software Engeenear",
-            "groupId": "4",
-            "photo": "../../assets/img/user.png"
-        },
-        {
-            "id": "cot005",
-            "name": "Drishty",
-            "email": "abc@gmail.com",
-            "mobile": "9876543210",
-            "company": "study time",
-            "title": "software Engeenear",
-            "groupId": "2",
-            "photo": "../../assets/img/user.png"
-        },
-        {
-            "id": "cot006",
-            "name": "aashi",
-            "email": "abc@gmail.com",
-            "mobile": "9876543210",
-            "company": "study time",
-            "title": "software Engeenear",
-            "groupId": "2",
-            "photo": "../../assets/img/user.png"
-        }
-    ],
-    "groups": [{
-            "id": "1",
-            "name": "calick"
-        },
-        {
-            "id": "2",
-            "name": "college"
-        },
-        {
-            "id": "3",
-            "name": "family"
-        },
-        {
-            "id": "4",
-            "name": "school"
-        }
-    ]
+  "contact": [
+    {
+      "id": "cot001",
+      "name": "sarwan kumar",
+      "email": "abc@gmail.com",
+      "mobile": "9876543210",
+      "company": "Chetu",
+      "title": "software Engeenear",
+      "groupId": "1",
+      "photo": "../../assets/img/user.png"
+    },
+    {
+      "id": "cot002",
+      "name": "Abhay kumar",
+      "email": "bca@gmail.com",
+      "mobile": "9876543210",
+      "company": "study time",
+      "title": "software Engeenear",
+      "groupId": "2",
+      "photo": "../../assets/img/user.png"
+    },
+    {
+      "id": "cot003",
+      "name": "nirbhay kumar",
+      "email": "abc@gmail.com",
+      "mobile": "9876543210",
+      "company": "study time",
+      "title": "software Engeenear",
+      "groupId": "3",
+      "photo": "../../assets/img/user.png"
+    },
+    {
+      "id": "cot004",
+      "name": "mahi",
+      "email": "abc@gmail.com",
+      "mobile": "9876543210",
+      "company": "study time",
+      "title": "software Engeenear",
+      "groupId": "4",
+      "photo": "../../assets/img/user.png"
+    },
+    {
+      "name": "drishty",
+      "photo": "https://images.unsplash.com/flagged/photo-1566127992631-137a642a90f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
+      "email": "drishty@gmail.com",
+      "mobile": "9632587410",
+      "company": "study",
+      "title": "student",
+      "groupId": "3",
+      "id": "uFORhk3"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "calick"
+    },
+    {
+      "id": "2",
+      "name": "college"
+    },
+    {
+      "id": "3",
+      "name": "family"
+    },
+    {
+      "id": "4",
+      "name": "school"
+    }
+  ]
 }
